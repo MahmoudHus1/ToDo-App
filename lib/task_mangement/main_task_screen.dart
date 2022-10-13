@@ -29,6 +29,13 @@ class _MainTaskScreenState extends State<MainTaskScreen>
     initializeTabController();
   }
 
+  
+  @override
+  void dispose() {
+    super.dispose();
+    tabController.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
